@@ -16,7 +16,7 @@ sudo apt install --assume-yes xscreensaver
 sudo systemctl disable lightdm.service
 sudo apt install gnome-boxes -y
 sudo apt install spice-vdagent spice-webdavd  -y
-wget https://osdn.net/projects/android-x86/downloads/71931/android-x86-9.0-r2.iso/
+wget https://osdn.net/projects/android-x86/downloads/71931/android-x86-9.0-r2.iso /home/ilyas/
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
