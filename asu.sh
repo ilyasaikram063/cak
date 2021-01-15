@@ -14,8 +14,6 @@ apt install --assume-yes xfce4 desktop-base
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'  
 sudo apt install --assume-yes xscreensaver
 sudo systemctl disable lightdm.service
-sudo apt install gnome-boxes -y
-sudo apt install spice-vdagent spice-webdavd  -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
@@ -24,10 +22,10 @@ sudo adduser ilyas chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
-printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
+printf '\nCheck https://remotedesktop.google.com/headless  Copy anu jang debian, tuluy paste keun didiyeu\n'
 read -p "Paste Here: " CRP
 su - ilyas -c """$CRP"""
-printf 'Check https://remotedesktop.google.com/access/ \n\n'
+printf 'Asup ka, hakan tah https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
     printf "\n\nUpgrade Completed " >&2
