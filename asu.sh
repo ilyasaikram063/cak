@@ -22,8 +22,8 @@ sudo adduser ilyas chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
-printf '\nCheck https://remotedesktop.google.com/headless  Copy anu jang debian, tuluy paste keun didiyeu\n'
-read -p "Paste Here: " CRP
+printf '\nCheck https://remotedesktop.google.com/headless  Copy anu jang debian, tuluy paste keun\n'
+read -p "Paste didiyeu : " CRP
 su - ilyas -c """$CRP"""
 printf 'Asup ka, hakan tah https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
