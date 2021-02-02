@@ -10,6 +10,7 @@ wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install gnome-boxes -y 
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
 sudo apt install spice-vdagent spice-webdavd  -y
 sudo DEBIAN_FRONTEND=noninteractive \
 apt install --assume-yes xfce4 desktop-base
@@ -27,7 +28,7 @@ printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy anu jang debian, tuluy paste keun\n'
 read -p "Paste didiyeu : " CRP
 su - ilyas -c """$CRP"""
-printf 'Asup ka, hakan tah https://remotedesktop.google.com/access/ \n\n'
+printf 'Asup, hakan tah https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
     printf "\n\nUpgrade Completed " >&2
